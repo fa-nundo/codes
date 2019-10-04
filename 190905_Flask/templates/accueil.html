@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<h1>Investment Opportunity Data</h1>
+<h2>Working on</h2>
+<table class="main sized">
+  <tr>
+    <th>
+        <h3>NASDAQ 100 Stocks</h3>
+        <img src='/images/plot_nasdaq100.png'></img>
+        <p>from Yahoo Finance</p>
+    </th>
+    <th>
+        <h3>Bitcoin Stocks</h3>
+        <img src='/images/plot_bitcoin.png'></img>
+        <p>from MarketCap</p>
+    </th>
+  </tr>
+  <tr>
+    <th>
+        <h3>Gold Stocks</h3>
+        <img src='/images/plot_gold.png'></img>
+        <p>from https://datahub.io/core/gold-prices#data</p>
+    </th>
+    <th>
+        <h3>Real Estate Stocks</h3>
+        <img src='/images/plot_realestate.png'></img>
+        <p>from https://www.investing.com/indices/real-estate-historical-data</p>
+    </th>
+  </tr>
+  <tr>
+    <th>
+        <h3>Google Stocks</h3>
+        <img src='/images/plot.png'></img>
+        <p>from Yahoo Finance</p>
+    </th>
+    <th>
+        <h3>Bitcoin Stocks</h3>
+        <img src='/images/plot_bitcoin.png'></img>
+        <p>from MarketCap</p>
+    </th>
+  </tr>
+</table>
+
+
+<table style="display:none;">
+  <tr>
+    <th>Google Stocks</th>
+    <th>Bitcoin Stocks</th>
+    <th>Gold Stocks</th>
+    <th>Real Estate Stocks</th>
+  </tr>
+  <tr>
+    <th><img src='/images/plot.png'></img></th>
+    <th><img src='/images/plot_bitcoin.png'></img></th>
+    <th><img src='/images/plot_gold.png'></img></th>
+    <th><img src='/images/plot_realestate.png'></img></th>
+  </tr>
+  <tr>
+    <th>from Yahoo Finance</th>
+    <th>from MarketCap</th>
+    <th>from https://datahub.io/core/gold-prices#data</th>
+    <th>from https://www.investing.com/indices/real-estate-historical-data</th>
+  </tr>
+</table>
+
+<div style="display:none">
+    <div><img src='/images/plot.png'></img></div>
+    <div><img src='/images/plot_bitcoin.png'></img></div>
+    <div>{{google_stocks|safe}}</div>
+</div>
+
+{% endblock %}

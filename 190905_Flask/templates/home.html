@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<div class="block1">
+    <h1>Holà</h1>
+    <h2>Askip, on veut faire un projet avec Flask ?</h2>
+    <p>Voici quelques centres d'intérêts qui pourront me permettre de trouver une idée de projet :</p>
+    agenda culturel, marketing, finance, web analytics, environnement, santé, musique, jeux vidéos, programmation, outils, python<br />
+    musculation, sport, entreprises françaises, secteur d'activités, histoire, education, cryptomonnaie, or, start up, ..<br />
+    lecture par position scraping, blog redacteur, <br />
+    <ul>
+        <li>Utilsation de Flask</li>
+        <li>Utilisation de BeautifulSoup</li>
+        <li>Prise en compte des contraintes business</li>
+        <li>Vocation à produire utilie (agenda, outil business, ..)</li>
+    </ul>
+    <p>"The limits of my language are the limits of my mind. All I know is what I have words for."</p>
+
+    <img src="https://nundo.fr/wp-content/uploads/2019/07/cropped-signature-florent-albert1-1.png">
+
+    <p><a target="_blank" href="https://pythonspot.com/flask-web-app-with-python/">flask-web-app-with-python</a></p>
+    <p><a target="_blank" href="https://realpython.com/flask-by-example-part-1-project-setup/">flask-by-example-part-1-project-setup</a></p>
+</div>
+
+<img src="/plot.png" alt="my plot">
+"Yoo{{tables | safe}}{% for table in tables %}{{ table|safe }}{% endfor %} man"
+{{data | safe}}
+
+{% endblock %}
